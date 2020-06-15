@@ -52,8 +52,7 @@ namespace HastaneYonetim.Controllers
             }
         }
 
-        //
-        // GET: /Manage/Index
+
         public async Task<ActionResult> Index(MesajIdYonet? mesaj)
         {
             ViewBag.StatusMessage =

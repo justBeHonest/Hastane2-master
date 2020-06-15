@@ -22,7 +22,7 @@
                 <div class="col-md-3 col-sm-3 col-xs-12 profile_left">
                     <div class="profile_img">
                         <div id="crop-avatar">
-                            <!-- Current avatar -->
+                           
                             <img class="img-responsive avatar-view" src="~/Content/images/user.png" alt="Avatar" title="Change the avatar">
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                         <li><i class="fa fa-inbox"></i>@Model.Doktor.Hekim.Email</li>
 
                     </ul>
-                    <!-- start skills -->
+                 
                     @if (Model.Doktor.musaitMi == true)
                     {
                         <a href="#" style="padding: 3px 10px 3px 10px; background-color:green " class="badge" readonly>Mevcut</a>
@@ -49,7 +49,7 @@
                     {
                         <a href="#" style="padding: 3px 10px 3px 10px; background-color:red " class="badge" readonly>Kapalı</a>
                     }
-                    <!-- end of skills -->
+                    
                 </div>
                 <div class="col-md-9 col-sm-9 col-xs-12">
                     <div class="" role="tabpanel" data-example-id="togglable-tabs">
@@ -60,7 +60,7 @@
                         </ul>
                         <div id="myTabContent" class="tab-content">
                             <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
-                                <!-- start patient today -->
+                              
                                 <table id="patients" class="data table table-striped no-margin">
                                     <thead>
                                         <tr>
@@ -90,7 +90,7 @@
                                     </tbody>
                                 </table>
 
-                                <!-- end patient today -->
+                               
                             </div>
                         </div>
                     </div>

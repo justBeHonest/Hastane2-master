@@ -37,10 +37,10 @@ namespace HastaneYonetim.Core.ViewModel
 
         public DateTime DogumTarihiniGetir()
         {
-            //TODO: Validate BirthDate 
+
 
             return DateTime.Parse(string.Format("{0}", DogumTarihi));
-            //return DateTime.ParseExact(BirthDate, "dd/MM/yyyy", CultureInfo.CurrentCulture);
+
         }
 
         public IEnumerable<Sehir> Sehirler { get; set; }

@@ -8,12 +8,12 @@ namespace HastaneYonetim
     {
         public static void Kayit(HttpConfiguration config)
         {
-            // formate with camelcase
+        
             var ayar = GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings;
             ayar.ContractResolver = new CamelCasePropertyNamesContractResolver();
             ayar.Formatting = Formatting.Indented;
 
-            //parent child serialization
+           
             var json = config.Formatters.JsonFormatter;
             json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.Objects;
             config.Formatters.Remove(config.Formatters.XmlFormatter);
@@ -21,9 +21,6 @@ namespace HastaneYonetim
 
 
 
-            // Web API configuration and services
-
-            // Web API routes
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(

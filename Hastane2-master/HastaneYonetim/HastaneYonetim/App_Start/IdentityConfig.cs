@@ -30,7 +30,7 @@ namespace HastaneYonetim
     {
         public Task SendAsync(IdentityMessage mesaj)
         {
-            // Plug in your email service here to send an email.
+  
             return Task.FromResult(0);
         }
     }
@@ -39,12 +39,12 @@ namespace HastaneYonetim
     {
         public Task SendAsync(IdentityMessage message)
         {
-            // Plug in your SMS service here to send a text message.
+     
             return Task.FromResult(0);
         }
     }
 
-    // Configure the application user manager used in this application. UserManager is defined in ASP.NET Identity and is used by the application.
+
     public class UygulamaKullaniciYoneticisi : UserManager<UygulamaKullanici>
     {
 
@@ -57,14 +57,14 @@ namespace HastaneYonetim
         public static UygulamaKullaniciYoneticisi Olustur(IdentityFactoryOptions<UygulamaKullaniciYoneticisi> options, IOwinContext context)
         {
             var yonetici = new UygulamaKullaniciYoneticisi(new UserStore<UygulamaKullanici>(context.Get<UygulamaDbContext>()));
-            // Configure validation logic for usernames
+  
             yonetici.UserValidator = new UserValidator<UygulamaKullanici>(yonetici)
             {
                 AllowOnlyAlphanumericUserNames = false,
                 RequireUniqueEmail = true
             };
 
-            // Configure validation logic for passwords
+
             yonetici.PasswordValidator = new PasswordValidator
             {
                 RequiredLength = 6,
@@ -74,13 +74,12 @@ namespace HastaneYonetim
                 RequireUppercase = true,
             };
 
-            // Configure user lockout defaults
+      
             yonetici.UserLockoutEnabledByDefault = true;
             yonetici.DefaultAccountLockoutTimeSpan = TimeSpan.FromMinutes(5);
             yonetici.MaxFailedAccessAttemptsBeforeLockout = 5;
 
-            // Register two factor authentication providers. This application uses Phone and Emails as a step of receiving a code for verifying the user
-            // You can write your own provider and plug it in here.
+         
             yonetici.RegisterTwoFactorProvider("Phone Code", new PhoneNumberTokenProvider<UygulamaKullanici>
             {
                 MessageFormat = "Your security code is {0}"
@@ -102,7 +101,7 @@ namespace HastaneYonetim
         }
     }
 
-    // Configure the application sign-in manager which is used in this application.
+  
     public class UygulamaOturumAcmaYoneticisi : SignInManager <UygulamaKullanici, string>
     {
         public UygulamaOturumAcmaYoneticisi(UygulamaKullaniciYoneticisi kullaniciYoneticisi, IAuthenticationManager authenticationManager)

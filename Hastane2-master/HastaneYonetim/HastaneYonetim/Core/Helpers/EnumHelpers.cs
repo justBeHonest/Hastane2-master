@@ -13,7 +13,7 @@ namespace HastaneYonetim.Core.Helpers
             var degerler = (from Enum e in Enum.GetValues(enumType)
                           select new SelectListItem
                           {
-                              // Selected = e.Equals(enumValue),
+                             
                               Text = ToDescription(e),
                               Value = e.ToString()
                           });

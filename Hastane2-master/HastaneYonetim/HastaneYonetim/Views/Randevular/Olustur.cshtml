@@ -5,7 +5,7 @@
 {
 
 @Html.ValidationSummary(true)
-                @Html.AntiForgeryToken() @*@Html.HiddenFor(m => m.Doctor)*@
+                @Html.AntiForgeryToken() 
                                 @Html.HiddenFor(m => m.Hasta)
                                                 <div class="row">
                                                     <div class="col-md-6 col-xs-12">
@@ -23,17 +23,7 @@
 
                                                             </div>
                                                         </div>
-                                                        @*<div class="x_panel">
-                                                                <div class="x_content">
-                                                                    <div class="form-group">
-                                                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="Doctors">Doctors</label>
-                                                                        <div class="col-md-9 col-sm-9 col-xs-12">
-                                                                            <select id="DoctorID" name="Doctors" class="form-control"></select>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>*@
+                                                       
                                                         <div class="x_panel">
                                                             <div class="x_content">
                                                                 <div id="divAppointments"></div>
@@ -71,7 +61,7 @@
                                                                 <div class="ln_solid"></div>
                                                                 <div class="form-group">
                                                                     <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-6">
-                                                                        @*<a href="@Url.Action("Index", "Patients")" class="btn btn-primary">Back</a>*@
+                                                                      
                                                                         <button type="submit" class="btn btn-success">Kaydet</button>
                                                                     </div>
                                                                 </div>

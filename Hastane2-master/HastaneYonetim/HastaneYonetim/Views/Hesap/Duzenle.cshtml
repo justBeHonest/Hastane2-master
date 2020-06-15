@@ -2,8 +2,6 @@
 @{
     ViewBag.Title = "Duzenle";
 }
-<!--Bu sayfa hata veriyor izni olmayan kullanıcının giremeyeceğini söylüyor düzenleme direk bu sayfanın açılamayacağından dolayı
-    olduğunu düşünüyorum-->
 <div class="row">
     <div class="col-md-12 col-sm-12 col-xs-12">
         <div class="x_panel">
@@ -30,7 +28,7 @@
                     <div class="form-group">
                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Durum</label> // status
                         <div class="col-md-6 col-sm-6 col-xs-12">
-                            @*<div  class="btn-group" data-toggle="buttons">*@
+                       
                             <div class="radio">
                                 <label>
                                     @Html.RadioButtonFor(model => model.aktifMi, "true", new { @class = "flat" }) Active
@@ -51,9 +49,9 @@
                                 </div>
                 }
                     </div>
-                <!-- /.panel-body -->
+     
             </div>
-            <!-- /.panel -->
+       
         </div>
     </div>
 </div>

@@ -58,8 +58,7 @@ namespace HastaneYonetim.Controllers
             private set { _rolYoneticisi = value; }
         }
 
-        //
-        // GET: /Account/Login
+     
         [AllowAnonymous]
         public ActionResult Giris(string returnUrl)
         {
@@ -67,8 +66,7 @@ namespace HastaneYonetim.Controllers
             return View();
         }
 
-        //
-        // POST: /Account/Login
+   
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -97,12 +95,10 @@ namespace HastaneYonetim.Controllers
             }
         }
 
-        //
-        // GET: /Hesap/KoduDogrula
         [AllowAnonymous]
         public async Task<ActionResult> KodDogrula(string saglayici, string returnUrl, bool hatirlaBeni)
         {
-            // Require that the user has already logged in via username/password or external login
+
             if (!await OturumAcmaYoneticisi.HasBeenVerifiedAsync())
             {
                 return View("Hata");
@@ -451,7 +447,7 @@ namespace HastaneYonetim.Controllers
                 return RedirectToAction("Giris");
             }
 
-            // Sign in the user with this external login provider if the user already has a login
+            
             var sonuc = await OturumAcmaYoneticisi.ExternalSignInAsync(girisBilgisi, isPersistent: false);
             switch (sonuc)
             {

@@ -713,8 +713,8 @@
     <Content Include="Content\iCheck\square\yellow.css" />
     <Content Include="Content\iCheck\square\yellow.png" />
     <Content Include="Content\iCheck\square\_all.css" />
+    <Content Include="Content\images\anasayfa.JPG" />
     <Content Include="Content\images\loader4.gif" />
-    <Content Include="Content\images\product5.jpg" />
     <Content Include="Content\images\user.jpg" />
     <Content Include="Content\images\user.png" />
     <Content Include="Content\Site.css" />
@@ -1168,7 +1168,7 @@
     <Content Include="Views\Randevular\Duzenle.cshtml" />
     <Content Include="Views\Bakimlar\BakimFormu.cshtml" />
     <Content Include="Views\Bakimlar\_bakimKismi.cshtml" />
-    <Content Include="Views\Bakimlar\_Confirmation.cshtml" />
+    <Content Include="Views\Bakimlar\_Onaylama.cshtml" />
     <Content Include="Views\Doktorlar\Detaylar.cshtml" />
     <Content Include="Views\Doktorlar\DoktorProfili.cshtml" />
     <Content Include="Views\Doktorlar\Duzenle.cshtml" />

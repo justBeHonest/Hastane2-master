@@ -4,7 +4,7 @@ namespace HastaneYonetim
 {
     public class BundleConfig
     {
-        // For more information on bundling, visit http://go.microsoft.com/fwlink/?LinkId=301862
+        
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
@@ -15,8 +15,7 @@ namespace HastaneYonetim
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
+           
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
@@ -59,11 +58,11 @@ namespace HastaneYonetim
                       "~/Content/toastr.css",
                       "~/Content/themes/base/jquery-ui.min.css",
                       "~/Content/css/nprogress.css",
-                      //"~/Content/fullcalendar.print.css",
+                    
                       "~/Content/css/animate.css",
                       "~/Content/iCheck/flat/green.css",
                       "~/Content/css/select2.min.css",
-                      //"~/Content/fonts/fontawesome-all.css",
+                   
                       "~/Content/css/font-awesome.min.css",
                       "~/Content/themes/base/core.css",
                       "~/Content/themes/base/resizable.css",

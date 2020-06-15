@@ -28,15 +28,7 @@ namespace HastaneYonetim.Controllers
             var randevu = _isBirimi.Randevular.HastaylaRandevuGetir(id);
             return View("_RandevuKısmi", randevu);
         }
-        //public ActionResult Patients(int id)
-        //{
-        //    var viewModel = new DoctorDetailViewModel()
-        //    {
-        //        Appointments = _unitOfWork.Appointments.GetAppointmentByDoctor(id),
-        //    };
-        //    //var upcomingAppnts = _unitOfWork.Appointments.GetAppointmentByDoctor(id);
-        //    return View(viewModel);
-        //}
+      
 
         public ActionResult Olustur(int id)
         {
